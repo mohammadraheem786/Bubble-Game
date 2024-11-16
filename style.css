@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,body{
+     height: 100%;
+     width: 100%;
+
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("water.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+    animation: bgFade 15s infinite alternate;
+    /* background-color: rgb(130, 191, 191); */
+}
+@keyframes bgFade {
+    0% {
+      filter: brightness(0.9);
+    }
+    100% {
+      filter: brightness(1.1);
+    }
+  }
+
+.panel{
+    overflow: hidden;
+    height: 85%;    
+    width: 85%;
+    border-radius: 15px;
+    backdrop-filter: blur(0px);
+    border: 2px solid rgba(244, 240, 240, 0.722);
+    /* background-color: rgb(225, 230, 234); */
+}
+.ptop{
+    padding:  0px 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    border: 2px solid rgb(233, 226, 226);
+    /* background-color: rgb(126, 209, 165); */
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;  
+}
+.elem h4{
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+.box{
+     padding: 10px 20px;
+     font-weight: 600;
+     font-size: 25px;
+     color: rgb(3, 126, 7);
+     background-color: azure;
+     border-radius: 5px;
+}
+#pbotm{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.bubble{
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(241, 88, 6, 0.813);
+    color: #f1eded;
+  }
+#pbotm .bubble:hover{
+  background-color: rgba(39, 18, 230, 0.818);
+  color: #e9e4e4;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+#over{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 150px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #e3ca10, #9863e1, #df1c67);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
